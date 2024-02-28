@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <style>
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Diabetes Prediction!</h1>
+    <p>Please enter the following details for diabetes prediction:</p>
+        <form action= "predict" method="post">
+        <label for="pregnancies">Number of Pregnancies:</label>
+        <input type="number" id="pregnancies" name="pregnancies" required>
+        
+        <label for="glucose">Glucose Level:</label>
+        <input type="number" id="glucose" name="glucose" required>
+        
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="number" id="blood_pressure" name="blood_pressure" required>
+        
+        <label for="skin_thickness">Skin Thickness:</label>
+        <input type="number" id="skin_thickness" name="skin_thickness" required>
+        
+        <label for="insulin">Insulin Level:</label>
+        <input type="number" id="insulin" name="insulin" required>
+        
+        <label for="bmi">BMI (Body Mass Index):</label>
+        <input type="number" id="bmi" name="bmi" required>
+        
+        <label for="diabetes_pedigree_function">Diabetes Pedigree Function:</label>
+        <input type="number" id="diabetes_pedigree_function" name="diabetes_pedigree_function" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>
