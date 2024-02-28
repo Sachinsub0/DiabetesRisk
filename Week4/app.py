@@ -18,6 +18,6 @@ def index():
 def predict():
     sample = [X_test[0]]
     prediction = regressor.predict(sample)
-    return render_template('index.html', prediction_text = "The patient's predicted diabetes risk is: " + str(prediction[0]))
+    return render_template('predict.html', prediction=prediction[0])
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=5001, debug=True)
